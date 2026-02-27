@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tong Wang — UX Designer</title>
+    <meta name="description" content="Tong Wang — UX Designer portfolio" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Top navigation -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link is-active" href="#">Home</a>
+
+        <div class="nav__right">
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#about">About me</a>
+          <a class="nav__link" href="#resume">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <h1 class="hero__title">Hey there, I am Tong</h1>
+
+          <p class="hero__blurb">
+            A UX Designer who creates simple, intuitive experiences. For the past three years,
+            I’ve worked in the last-mile delivery domain, designing solutions that balance user
+            needs and business goals.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Latest Works</h2>
+
+          <div class="projects__grid">
+            <!-- Card 1 -->
+            <article class="card">
+              <a class="card__thumb" href="#" aria-label="Open Project name">
+                <!-- Placeholder block; swap for an image later -->
+                <div class="thumb thumb--placeholder"></div>
+              </a>
+
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="#">Project name</a>
+                </h3>
+
+                <ul class="tags" aria-label="Project tags">
+                  <li class="tag">tag</li>
+                  <li class="tag">tag</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <a class="card__thumb" href="#" aria-label="Open Project name">
+                <div class="thumb thumb--placeholder"></div>
+              </a>
+
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="#">Project name</a>
+                </h3>
+
+                <ul class="tags" aria-label="Project tags">
+                  <li class="tag">tag</li>
+                  <li class="tag">tag</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <a class="card__thumb" href="#" aria-label="Open Project name">
+                <div class="thumb thumb--placeholder"></div>
+              </a>
+
+              <div class="card__body">
+                <h3 class="card__title">
+                  <a href="#">Project name</a>
+                </h3>
+
+                <ul class="tags" aria-label="Project tags">
+                  <li class="tag">tag</li>
+                  <li class="tag">tag</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Add more cards as needed -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Simple anchors for nav (optional placeholders) -->
+      <section id="about" class="anchor-section" aria-label="About me section"></section>
+      <section id="resume" class="anchor-section" aria-label="Resume section"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <small>© <span id="year"></span> Tong Wang. All rights reserved</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
