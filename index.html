@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tong Wang — UX Designer</title>
-    <meta name="description" content="Tong Wang — UX Designer portfolio" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Tong Wang — UX Designer portfolio homepage" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
-    <!-- Top navigation -->
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
-        <a class="nav__link is-active" href="#">Home</a>
+        <a class="nav__link is-active" href="./">Home</a>
 
         <div class="nav__right">
           <a class="nav__link" href="#projects">Projects</a>
@@ -23,9 +22,8 @@
     </header>
 
     <main>
-      <!-- Hero -->
       <section class="hero">
-        <div class="container hero__grid">
+        <div class="container">
           <h1 class="hero__title">Hey there, I am Tong</h1>
 
           <p class="hero__blurb">
@@ -36,81 +34,59 @@
         </div>
       </section>
 
-      <!-- Projects -->
       <section id="projects" class="projects">
         <div class="container">
           <h2 class="section-title">My Latest Works</h2>
 
           <div class="projects__grid">
-            <!-- Card 1 -->
             <article class="card">
               <a class="card__thumb" href="#" aria-label="Open Project name">
-                <!-- Placeholder block; swap for an image later -->
-                <div class="thumb thumb--placeholder"></div>
+                <div class="thumb" role="img" aria-label="Project thumbnail placeholder"></div>
               </a>
-
-              <div class="card__body">
-                <h3 class="card__title">
-                  <a href="#">Project name</a>
-                </h3>
-
-                <ul class="tags" aria-label="Project tags">
-                  <li class="tag">tag</li>
-                  <li class="tag">tag</li>
-                </ul>
+              <div class="card__meta">
+                <div class="card__title">Project name</div>
+                <div class="tags">
+                  <span class="tag">tag</span>
+                  <span class="tag">tag</span>
+                </div>
               </div>
             </article>
 
-            <!-- Card 2 -->
             <article class="card">
               <a class="card__thumb" href="#" aria-label="Open Project name">
-                <div class="thumb thumb--placeholder"></div>
+                <div class="thumb" role="img" aria-label="Project thumbnail placeholder"></div>
               </a>
-
-              <div class="card__body">
-                <h3 class="card__title">
-                  <a href="#">Project name</a>
-                </h3>
-
-                <ul class="tags" aria-label="Project tags">
-                  <li class="tag">tag</li>
-                  <li class="tag">tag</li>
-                </ul>
+              <div class="card__meta">
+                <div class="card__title">Project name</div>
+                <div class="tags">
+                  <span class="tag">tag</span>
+                  <span class="tag">tag</span>
+                </div>
               </div>
             </article>
 
-            <!-- Card 3 -->
             <article class="card">
               <a class="card__thumb" href="#" aria-label="Open Project name">
-                <div class="thumb thumb--placeholder"></div>
+                <div class="thumb" role="img" aria-label="Project thumbnail placeholder"></div>
               </a>
-
-              <div class="card__body">
-                <h3 class="card__title">
-                  <a href="#">Project name</a>
-                </h3>
-
-                <ul class="tags" aria-label="Project tags">
-                  <li class="tag">tag</li>
-                  <li class="tag">tag</li>
-                </ul>
+              <div class="card__meta">
+                <div class="card__title">Project name</div>
+                <div class="tags">
+                  <span class="tag">tag</span>
+                  <span class="tag">tag</span>
+                </div>
               </div>
             </article>
-
-            <!-- Add more cards as needed -->
           </div>
         </div>
       </section>
 
-      <!-- Simple anchors for nav (optional placeholders) -->
-      <section id="about" class="anchor-section" aria-label="About me section"></section>
-      <section id="resume" class="anchor-section" aria-label="Resume section"></section>
+      <section id="about" class="spacer"></section>
+      <section id="resume" class="spacer"></section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer__inner">
-        <small>© <span id="year"></span> Tong Wang. All rights reserved</small>
-      </div>
+    <footer class="footer">
+      <small>© <span id="year"></span> Tong Wang. All rights reserved</small>
     </footer>
 
     <script>
