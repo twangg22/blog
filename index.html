@@ -7,7 +7,32 @@
     <meta name="description" content="Tong Wang — UX Designer portfolio homepage" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+<script>
+  (function () {
+    const target = document.getElementById("typewriter");
+    if (!target) return;
 
+    const text = "Hey there, I am Tong";
+    const speed = 65; // ms per character (tweak)
+    const startDelay = 250;
+
+    let i = 0;
+
+    function typeNext() {
+      target.textContent += text.charAt(i);
+      i += 1;
+
+      if (i < text.length) {
+        setTimeout(typeNext, speed);
+      }
+      // done: cursor keeps blinking (CSS)
+    }
+
+    // Start typing on page load
+    setTimeout(typeNext, startDelay);
+  })();
+</script>
+  
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
@@ -24,7 +49,9 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Hey there, I am Tong :) </h1>
+          <h1 class="hero__title">
+            <span id="typewriter" aria-label="Hey there, I am Tong"></span><span class="cursor" aria-hidden="true"></span>
+          </h1>
 
           <p class="hero__blurb">
             A UX Designer who creates simple, intuitive experiences. For the past three years,
