@@ -81,6 +81,21 @@ a:hover { text-decoration: underline; }
     blink 0.8s infinite;
 }
 
+.cursor {
+  display: inline-block;
+  width: 0.08em;
+  transform: translateY(0.05em);
+  border-right: 0.12em solid currentColor;
+  margin-left: 0.06em;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @keyframes typing {
   to { width: 100%; }
 }
