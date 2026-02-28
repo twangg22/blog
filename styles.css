@@ -60,7 +60,7 @@ a:hover { text-decoration: underline; }
 
 /* Hero */
 .hero {
-  padding: 180px 0 60px; /* big whitespace like your screenshot */
+  padding: 140px 0 60px; /* big whitespace like your screenshot */
 }
 
 .hero__title {
@@ -73,7 +73,7 @@ a:hover { text-decoration: underline; }
 .hero__blurb {
   margin: 18px 0 0;
   max-width: 44ch;       /* keeps it narrow like the screenshot */
-  font-size: 16px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -115,7 +115,7 @@ a:hover { text-decoration: underline; }
 }
 
 .card__title {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -126,8 +126,8 @@ a:hover { text-decoration: underline; }
 }
 
 .tag {
-  font-size: 14px;
-  padding: 8px 16px;
+  font-size: 12px;
+  padding: 6px 10px;
   border-radius: 999px;
   background: var(--chip);
   border: 1px solid var(--border);
