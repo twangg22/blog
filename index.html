@@ -7,31 +7,31 @@
     <meta name="description" content="Tong Wang — UX Designer portfolio homepage" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-<script>
-  (function () {
-    const target = document.getElementById("typewriter");
-    if (!target) return;
-
-    const text = "Hey there, I am Tong";
-    const speed = 65; // ms per character (tweak)
-    const startDelay = 250;
-
-    let i = 0;
-
-    function typeNext() {
-      target.textContent += text.charAt(i);
-      i += 1;
-
-      if (i < text.length) {
-        setTimeout(typeNext, speed);
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const target = document.getElementById("typewriter");
+      if (!target) {
+        console.error("Typewriter target not found (#typewriter).");
+        return;
       }
-      // done: cursor keeps blinking (CSS)
-    }
-
-    // Start typing on page load
-    setTimeout(typeNext, startDelay);
-  })();
-</script>
+      
+      const text = "Hey there, I am Tong";
+      const speed = 65; // ms per letter
+      const startDelay = 250;
+      
+      target.textContent = ""; // ensure empty before typing
+      
+      let i = 0;
+      function typeNext() {
+        target.textContent += text[i];
+        i += 1;
+        if (i < text.length) setTimeout(typeNext, speed);
+      // cursor keeps blinking from CSS after done
+      }
+      
+      setTimeout(typeNext, startDelay);
+    });
+  </script>
   
   <body>
     <header class="site-header">
