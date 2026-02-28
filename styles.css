@@ -60,7 +60,14 @@ a:hover { text-decoration: underline; }
 
 /* Hero */
 .hero {
-  padding: 180px 0 100px; /* big whitespace like your screenshot */
+  min-height: 100vh;          /* full viewport height */
+  display: flex;
+  align-items: center;        /* vertical center */
+}
+
+.hero .container {
+  width: min(var(--max), calc(100% - (var(--pad) * 2)));
+  margin: 0 auto;
 }
 
 .hero__title {
